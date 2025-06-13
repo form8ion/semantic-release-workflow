@@ -3,7 +3,7 @@ name: Workflow Release
 on:
   push:
     branches:
-      - master
+      - main
       - beta
       - alpha
       - renovate/**
