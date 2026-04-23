@@ -7,7 +7,7 @@
     {
       "customType": "regex",
       "description": "Update semantic-release version used by npx",
-      "managerFilePatterns": [
+      "fileMatch": [
         "/^\\.github/workflows/release\\.yml$/",
         "/^\\.github/workflows/workflow-release\\.yml$/"
       ],
@@ -21,7 +21,7 @@
   "packageRules": [
     {
       "matchFileNames": [".github/workflows/release.yml"],
-      "extends": [":semanticCommitTypeAll(fix)"]
+      "semanticCommitType": "fix"
     },
     {
       "matchFileNames": [".github/workflows/release.yml"],
