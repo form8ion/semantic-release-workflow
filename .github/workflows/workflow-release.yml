@@ -43,3 +43,17 @@ jobs:
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  workflow-result:
+    runs-on: ubuntu-latest
+    needs:
+      - verify
+      - workflow-release
+    if: ${{ !cancelled() }}
+    steps:
+      - name: All jobs passed
+        if: ${{ !(contains(needs.*.result, 'failure')) }}
+        run: exit 0
+      - name: Some job failed
+        if: ${{ contains(needs.*.result, 'failure') }}
+        run: exit 1

@@ -31,7 +31,7 @@ rulesets:
         parameters:
           strict_required_status_checks_policy: false
           required_status_checks:
-            - context: workflow-release
+            - context: workflow-result
               integration_id: 15368
     bypass_actors:
       - actor_id: 3208999
