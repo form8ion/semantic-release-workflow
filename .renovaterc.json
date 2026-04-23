@@ -6,7 +6,6 @@
   "customManagers": [
     {
       "customType": "regex",
-      "commitMessagePrefix": "fix",
       "description": "Update semantic-release version used by npx",
       "managerFilePatterns": [
         "/^\\.github/workflows/release\\.yml$/",
