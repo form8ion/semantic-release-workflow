@@ -18,5 +18,11 @@
       "datasourceTemplate": "npm",
       "depNameTemplate": "semantic-release"
     }
+  ],
+  "packageRules": [
+    {
+      "matchFileNames": [".github/workflows/release.yml"],
+      "extends": [":semanticCommitTypeAll(fix)"]
+    }
   ]
 }
