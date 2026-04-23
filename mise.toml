@@ -1,2 +1,6 @@
+[tools]
+hk = "1.43.0"
+pkl = "0.31.1"
+
 [tasks.verify]
 run = "npx --yes --package renovate -- renovate-config-validator"
