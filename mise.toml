@@ -1,5 +1,5 @@
 [tools]
-hk = "1.43.0"
+hk = "1.44.0"
 pkl = "0.31.1"
 
 [tasks.verify]
