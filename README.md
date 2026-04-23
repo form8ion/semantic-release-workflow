@@ -8,6 +8,23 @@ A reusable workflow for running semantic-release with recommended simplicity
 
 <!--status-badges end -->
 
+## Usage
+
+```yaml
+jobs:
+  verify:
+    ...
+  release:
+    needs:
+      - verify
+    permissions:
+      contents: write
+      id-token: write
+      issues: write
+      pull-requests: write
+    uses: form8ion/semantic-release-workflow/.github/workflows/release.yml@v1.0.0
+```
+
 ## Contributing
 
 <!--contribution-badges start -->
