@@ -26,7 +26,6 @@
     {
       "matchFileNames": [".github/workflows/release.yml"],
       "matchUpdateTypes": ["major"],
-      "groupName": "release.yml major dependencies",
       "commitBody": "BREAKING CHANGE: {{depName}} updated to v{{newMajor}}",
       "automerge": false
     }
