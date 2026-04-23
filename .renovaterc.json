@@ -23,6 +23,12 @@
     {
       "matchFileNames": [".github/workflows/release.yml"],
       "extends": [":semanticCommitTypeAll(fix)"]
+    },
+    {
+      "matchFileNames": [".github/workflows/release.yml"],
+      "matchUpdateTypes": ["major"],
+      "commitBody": "BREAKING CHANGE: {{depName}} updated to v{{newMajor}}",
+      "automerge": false
     }
   ]
 }
