@@ -1,6 +1,13 @@
 [tools]
+actionlint = "1.7.12"
 hk = "1.44.0"
 pkl = "0.31.1"
 
-[tasks.verify]
+[tasks."verify:workflows"]
+run = "actionlint .github/workflows/*.yml"
+
+[tasks."verify:renovate-config"]
 run = "npx --yes --package renovate -- renovate-config-validator"
+
+[tasks.verify]
+depends = ["verify:renovate-config", "verify:workflows"]
