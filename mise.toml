@@ -3,7 +3,7 @@ lockfile = true
 
 [tools]
 actionlint = "1.7.12"
-hk = "1.44.1"
+hk = "1.44.2"
 pkl = "0.31.1"
 
 [tasks."verify:workflows"]
