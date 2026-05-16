@@ -5,7 +5,7 @@ lockfile = true
 actionlint = "1.7.12"
 hk = "1.45.0"
 pkl = "0.31.1"
-zizmor = "1.25.0"
+zizmor = "1.25.2"
 
 [tasks."fix:workflows:zizmor"]
 run = "zizmor --fix .github/workflows/*.yml"
