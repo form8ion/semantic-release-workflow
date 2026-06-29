@@ -33,7 +33,7 @@ jobs:
         with:
           mode: firewall-free
       - run: sfw npm install -g corepack@latest
-      - run: corepack sfw npm clean-install
+      - run: sfw corepack npm clean-install
       - run: corepack npm audit signatures
       - name: semantic-release
         run: sfw npx semantic-release@25.0.5
