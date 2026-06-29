@@ -29,11 +29,14 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: npm
-      - run: npm install -g corepack@latest
-      - run: corepack npm clean-install
+      - uses: SocketDev/action@ba6de6cc0565af1f42295590380973573297e31f # v1.3.2
+        with:
+          mode: firewall-free
+      - run: sfw npm install -g corepack@latest
+      - run: corepack sfw npm clean-install
       - run: corepack npm audit signatures
       - name: semantic-release
-        run: npx semantic-release@25.0.5
+        run: sfw npx semantic-release@25.0.5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
