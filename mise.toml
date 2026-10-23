@@ -3,7 +3,7 @@ lockfile = true
 
 [tools]
 actionlint = "1.7.12"
-hk = "2.8.0"
+hk = "2.8.1"
 pkl = "0.32.2"
 zizmor = "1.31.1"
 
