@@ -36,7 +36,7 @@ jobs:
       - run: sfw corepack npm clean-install
       - run: corepack npm audit signatures
       - name: semantic-release
-        run: sfw npx semantic-release@25.0.5
+        run: sfw npx semantic-release@26.0.0-beta.5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
