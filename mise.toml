@@ -4,7 +4,7 @@ lockfile = true
 [tools]
 actionlint = "1.7.12"
 hk = "2.13.0"
-pkl = "0.33.0"
+pkl = "0.33.1"
 zizmor = "1.32.0"
 
 [tasks."fix:workflows:zizmor"]
